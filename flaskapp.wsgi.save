@@ -1,0 +1,7 @@
+#flaskapp.wsgi
+import sys
+sys.path.insert(0, '/var/www/html/flaskapp')
+
+activate_this = '/path/to/env//flaskapp.py'
+
+from flaskapp import app as application

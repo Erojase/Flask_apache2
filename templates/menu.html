@@ -1,0 +1,21 @@
+{% block title%}
+<title>Tabla Clientes</title>
+{% endblock %}
+{% block contenido %}
+<a href="/reg">Registro de usuarios</a>
+<form method="POST" onsubmit="recargar()">
+  Nombre:<br>
+  <input type="text" name="nombre"><br>
+  Apellido:<br>
+  <input type="text" name="apellido">
+  <input type="submit" value="Submit">
+</form>
+<script type="text/javascript">
+  function recargar() {
+    window.location.href("lol")
+  }
+</script>
+<div>
+  {{df|safe}}
+</div>
+{% endblock %}
