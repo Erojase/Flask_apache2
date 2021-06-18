@@ -13,7 +13,7 @@ app = Flask(__name__)
 
 
 # password = getpass.getpass("Introduce tu contrasseña de MongoDB por favor:  ")
-client = MongoClient("mongodb+srv://eduardo:cyberops@cluster0.0rbhn.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
+client = MongoClient("URL de mongodb")
 db = client["pruebadb"]
 collection = db['clientes']
 
